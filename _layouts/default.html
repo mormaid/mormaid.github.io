@@ -1,0 +1,22 @@
+<!--
+  Base wrapper for every page.
+  This file controls the common page structure:
+  head, header, main content area, and footer.
+-->
+
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="site-shell">
+      {% include header.html %}
+
+      <main class="site-main" id="main-content">
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
