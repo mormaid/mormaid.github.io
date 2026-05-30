@@ -33,6 +33,11 @@ plugins:
 # Build settings.
 markdown: kramdown
 
+# An attempt at fixing the broken SCSS.
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Things Jekyll should not copy into the finished site.
 exclude:
   - Gemfile
