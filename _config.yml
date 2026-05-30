@@ -1,0 +1,41 @@
+# _config.yml
+# Global settings for the whole Jekyll site.
+
+title: mormaid
+description: "Cybersecurity logbook from The Deep."
+url: "https://mormaid.github.io"
+
+# Used by jekyll-seo-tag.
+author:
+  name: mormaid
+  url: "https://mormaid.github.io"
+
+# Site navigation.
+# The header loops through this list, so nav links live in one place.
+nav:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Projects
+    url: /projects/
+  - title: About
+    url: /about/
+
+# Blog post URL style.
+permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins installed by the Gemfile and used during the Jekyll build.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings.
+markdown: kramdown
+
+# Things Jekyll should not copy into the finished site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
